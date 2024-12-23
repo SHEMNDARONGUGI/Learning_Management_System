@@ -5,30 +5,31 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> PySchool - Online Courses Django LMS </title>
+    {% load static %}
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="static/assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}">
 
     <!-- CSS
 	============================================ -->
-    <link rel="stylesheet" href="static/assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="static/assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="static/assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/sal.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/feather.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/fontawesome.min.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/euclid-circulara.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/swiper.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/magnify.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/odometer.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/animation.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/bootstrap-select.min.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/jquery-ui.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/magnigy-popup.min.css">
-    <link rel="stylesheet" href="static/assets/css/plugins/plyr.css">
-    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/sal.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/feather.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/euclid-circulara.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/magnify.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/magnigy-popup.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/plyr.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 </head>
 <body class="rbt-header-sticky">
 <!--Top bar-->
@@ -66,7 +67,7 @@
                                         <div class="inner">
                                             <div class="content">
                                                 <span class="rbt-badge variation-02 bg-color-primary color-white radius-round">Hot</span>
-                                                <span class="news-text"><img src="static/assets/images/icons/hand-emojji.svg" alt="Hand Emojji Images"> Intro price. Get Pystudy for Big Sale -95% off.</span>
+                                                <span class="news-text"><img src="{% static 'assets/images/icons/hand-emojji.svg' %}" alt="Hand Emojji Images"> Intro price. Get Pystudy for Big Sale -95% off.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -98,7 +99,7 @@
                                     <ul class="rbt-dropdown-menu switcher-language">
                                         <li class="has-child-menu">
                                             <a href="#">
-                                                <img class="left-image" src="static/assets/images/icons/en-us.png" alt="Language Images">
+                                                <img class="left-image" src="{% static 'assets/images/icons/en-us.png' %}" alt="Language Images">
                                                 <span class="menu-item">English</span>
                                                 <i class="right-icon feather-chevron-down"></i>
                                             </a>
@@ -201,7 +202,7 @@
                             <a href="core/courses.html">Courses</a>
                         </li>
                         <li>
-                            <a href="accounts/login/index.htm">My Courses</a>
+                            <a href="accounts/login/index.html">My Courses</a>
                         </li>
                         <li class="current">
                             <a href="contact.html">Contact Us</a>
@@ -482,7 +483,7 @@
                     <li class="minicart-item">
                         <div class="thumbnail">
                             <a href="#">
-                                <img src="static/assets/images/product/1.jpg" alt="Product Images">
+                                <img src="{% static 'assets/images/product/1.jpg' %}" alt="Product Images">
                             </a>
                         </div>
                         <div class="product-content">
@@ -498,7 +499,7 @@
                     <li class="minicart-item">
                         <div class="thumbnail">
                             <a href="#">
-                                <img src="static/assets/images/product/7.jpg" alt="Product Images">
+                                <img src="{% static 'assets/images/product/7.jpg' %}" alt="Product Images">
                             </a>
                         </div>
                         <div class="product-content">
@@ -514,7 +515,7 @@
                     <li class="minicart-item">
                         <div class="thumbnail">
                             <a href="#">
-                                <img src="static/assets/images/product/3.jpg" alt="Product Images">
+                                <img src="{% static 'assets/images/product/3.jpg' %}" alt="Product Images">
                             </a>
                         </div>
                         <div class="product-content">
@@ -530,7 +531,7 @@
                     <li class="minicart-item">
                         <div class="thumbnail">
                             <a href="#">
-                                <img src="static/assets/images/product/4.jpg" alt="Product Images">
+                                <img src="{% static 'assets/images/product/4.jpg' %}" alt="Product Images">
                             </a>
                         </div>
                         <div class="product-content">
@@ -630,7 +631,7 @@
             <div class="row g-5">
                 <div class="col-lg-6">
                     <div class="thumbnail">
-                        <img class="w-100 radius-6" src="static/assets/images/about/contact.jpg" alt="Contact Images">
+                        <img class="w-100 radius-6" src="{% static 'assets/images/about/contact.jpg' %}" alt="Contact Images">
                     </div>
                 </div>
 
@@ -832,34 +833,34 @@
 <!-- JS
 ============================================ -->
 <!-- Modernizer JS -->
-<script src="static/assets/js/vendor/modernizr.min.js"></script>
+<script src="{% static 'assets/js/vendor/modernizr.min.js' %}"></script>
 <!-- jQuery JS -->
-<script src="static/assets/js/vendor/jquery.js"></script>
+<script src="{% static 'assets/js/vendor/jquery.js' %}"></script>
 <!-- Bootstrap JS -->
-<script src="static/assets/js/vendor/bootstrap.min.js"></script>
+<script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
 <!-- sal.js' %} -->
-<script src="static/assets/js/vendor/sal.js"></script>
-<script src="static/assets/js/vendor/swiper.js"></script>
-<script src="static/assets/js/vendor/magnify.min.js"></script>
-<script src="static/assets/js/vendor/jquery-appear.js"></script>
-<script src="static/assets/js/vendor/odometer.js"></script>
-<script src="static/assets/js/vendor/backtotop.js"></script>
-<script src="static/assets/js/vendor/isotop.js"></script>
-<script src="static/assets/js/vendor/imageloaded.js"></script>
-<script src="static/assets/js/vendor/wow.js"></script>
-<script src="static/assets/js/vendor/waypoint.min.js"></script>
-<script src="static/assets/js/vendor/easypie.js"></script>
-<script src="static/assets/js/vendor/text-type.js"></script>
-<script src="static/assets/js/vendor/jquery-one-page-nav.js"></script>
-<script src="static/assets/js/vendor/bootstrap-select.min.js"></script>
-<script src="static/assets/js/vendor/jquery-ui.js"></script>
-<script src="static/assets/js/vendor/magnify-popup.min.js"></script>
-<script src="static/assets/js/vendor/paralax-scroll.js"></script>
-<script src="static/assets/js/vendor/paralax.min.js"></script>
-<script src="static/assets/js/vendor/countdown.js"></script>
-<script src="static/assets/js/vendor/plyr.js"></script>
+<script src="{% static 'assets/js/vendor/sal.js' %}"></script>
+<script src="{% static 'assets/js/vendor/swiper.js' %}"></script>
+<script src="{% static 'assets/js/vendor/magnify.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/jquery-appear.js' %}"></script>
+<script src="{% static 'assets/js/vendor/odometer.js' %}"></script>
+<script src="{% static 'assets/js/vendor/backtotop.js' %}"></script>
+<script src="{% static 'assets/js/vendor/isotop.js' %}"></script>
+<script src="{% static 'assets/js/vendor/imageloaded.js' %}"></script>
+<script src="{% static 'assets/js/vendor/wow.js' %}"></script>
+<script src="{% static 'assets/js/vendor/waypoint.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/easypie.js' %}"></script>
+<script src="{% static 'assets/js/vendor/text-type.js' %}"></script>
+<script src="{% static 'assets/js/vendor/jquery-one-page-nav.js' %}"></script>
+<script src="{% static 'assets/js/vendor/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/jquery-ui.js' %}"></script>
+<script src="{% static 'assets/js/vendor/magnify-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/paralax-scroll.js' %}"></script>
+<script src="{% static 'assets/js/vendor/paralax.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/countdown.js' %}"></script>
+<script src="{% static 'assets/js/vendor/plyr.js' %}"></script>
 <!-- Main JS -->
-<script src="static/assets/js/main.js"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
 <script src="ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </body>
 </html>
